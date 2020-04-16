@@ -13,16 +13,9 @@ const TopNav = () => {
       
       <ul>
         <li>
-          <Link href="/swapi">
+          <Link href="/">
             <a>
               Star Wars
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/products">
-            <a>
-              Products
             </a>
           </Link>
         </li>

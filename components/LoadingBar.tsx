@@ -12,6 +12,8 @@ const LoadingBar = ({loading}) => {
       <style jsx>
         {`
           .LoadingBar {
+            position: relative;
+            z-index: 99;
             width: 100%;
             min-width: 100%;
             height: 3px;

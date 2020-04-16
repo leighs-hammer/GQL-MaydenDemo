@@ -4,26 +4,16 @@ import Head from 'next/head'
 import Stage from '../components/Stage'
 import ApolloClient, { gql } from 'apollo-boost'
 import { ApolloProvider } from '@apollo/react-hooks'
-import StarWarsDemo from '../components/StarWarsDemo'
+import StarWarsDemo from '../components/StarWars/StarWarsDemo'
+import fetch from 'isomorphic-fetch'
+
 const client = new ApolloClient({
   uri: 'https://swapi.graph.cool/',
+  fetch: fetch
 })
 
 
-const Home = () => {
-
-
-  // client
-  // .query({
-  //   query: gql`
-  //     {
-  //       allFilms {
-  //         title
-  //       }
-  //   }
-  //   `
-  // })
-  // .then(result => console.log(result));
+const StarWars = () => {
 
   return (
     <ApolloProvider client={client}>
@@ -34,4 +24,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default StarWars
