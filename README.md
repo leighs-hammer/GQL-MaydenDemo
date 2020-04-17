@@ -17,4 +17,4 @@ The demo is in `/components/StarWars/StarWarsDemo.tsx`
 
 # Node version - v12.8.1
 
-You potentially need the specific version above
+If you have issues try deleting the lock files and node_modules folder and re installing. 
