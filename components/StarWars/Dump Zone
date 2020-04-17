@@ -1,0 +1,57 @@
+Dump Zone
+
+# product
+{
+  product(id: "gid://shopify/Product/3657275998292") {
+    id
+    title
+    featuredImage {
+      altText
+      originalSrc
+    }
+    
+    # collections(first: 1) {
+    #   edges {
+    #     node {
+    #       products(first: 5) {
+    #         edges {
+    #           node {
+    #             handle
+    #             title
+    #             featuredImage {
+    #               altText
+    #               originalSrc
+    #             }
+    #           }
+    #         }
+    #       }
+    #     }
+    #   }
+    # }
+    
+  }
+
+	# products(first: 10) {
+	# edges {
+	# node {
+	# id
+	# title
+	# featuredImage {
+	# altText
+	# originalSrc
+	# }
+	# }
+	# }
+	# }
+  
+  # collections(first:4) {
+  #   edges {
+  #     node {
+  #       handle
+  #       title
+  #       productsCount
+  #     }
+  #   }
+  # }
+}
+

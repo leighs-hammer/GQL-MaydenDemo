@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import { useQuery, useLazyQuery } from '@apollo/react-hooks'
 import { gql } from 'apollo-boost'
 import LoadingBar from '../LoadingBar'
@@ -29,7 +29,7 @@ query getSingleFilm($id: ID) {
   }
 }`
 
-
+// Component
 const StarWarsDemo: React.FC = () => {
 
   // theme
@@ -39,7 +39,7 @@ const StarWarsDemo: React.FC = () => {
   const [selected, setSelected] = useState({id: 'millenium', title: 'Get started'})
 
   // Apollo Query
-  const {data, loading, error} = useQuery(gql`${QUERY}`)  
+  const {data, loading, error} = useQuery(gql`${QUERY}`)
 
   // Apollo Lazy
   const [fetchDetails, {called, loading: detailsLoading, data: details}] = useLazyQuery(gql`${DETAILS_QUERY}`, {variables: {id: selected.id}})

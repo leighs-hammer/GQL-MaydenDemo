@@ -1,10 +1,8 @@
-import React, { useEffect } from 'react'
-import Head from 'next/head';
-import Header from './Header';
-import { useTheme } from '../hooks/useTheme';
-import Footer from './Footer';
-import { useNavigation } from '../hooks/useNavigation';
-import DebugPanel from './Debug/DepugPanel';
+import React from 'react'
+import Head from 'next/head'
+import Header from './Header'
+import { useTheme } from '../hooks/useTheme'
+import Footer from './Footer'
 
 
 const Stage = ({children}) => {
